@@ -21,7 +21,9 @@ Data Set Characteristics:
 - Target: Median house price
 
 ## Exploratory Data Analysis (EDA)Before running regression, we conducted EDA:
-  - Correlation Analysis: MedInc had the highest correlation (0.69) with housing prices.
+  - Correlation Analysis: MedInc had the highest correlation (0.69) with housing prices. All the other features had no correlation to the target value
+![Correlation Matriz](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/Corr.png?raw=True)
+
   - Box Plot Analysis: Detected outliers in Population, which were handled.
   - Histogram Distribution: Verified skewness in certain features.
 
