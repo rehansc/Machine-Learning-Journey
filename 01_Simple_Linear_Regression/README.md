@@ -20,20 +20,9 @@ Data Set Characteristics:
   - Missing Attribute Values:None
 - Target: Median house price
 
-Exploratory Data Analysis (EDA)Before running regression, we conducted EDA:
+## Exploratory Data Analysis (EDA)Before running regression, we conducted EDA:
   - Correlation Analysis: MedInc had the highest correlation (0.69) with housing prices.
   - Box Plot Analysis: Detected outliers in Population, which were handled.
   - Histogram Distribution: Verified skewness in certain features.
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.datasets import fetch_california_housing
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, r2_score
 
-# Load dataset
-data = fetch_california_housing()
-df = pd.DataFrame(data.data, columns=data.feature_names)
-df['Target'] = data.target
