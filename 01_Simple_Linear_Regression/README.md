@@ -22,7 +22,29 @@ Data Set Characteristics:
 
 ## Exploratory Data Analysis (EDA)Before running regression, we conducted EDA:
   - Correlation Analysis: MedInc had the highest correlation (0.69) with housing prices. All the other features had no correlation to the target value
-![Correlation Matriz](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/Corr.png?raw=True)
+
+```python
+import pandas as pd
+from sklearn.datasets import fetch_california_housing
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+cal = fetch_california_housing()
+df = pd.DataFrame(cal.data, columns=cal.feature_names)
+df["Target"] = cal.target  # Add target column
+
+# Compute correlation with target
+correlation_with_target = df.corr()["Target"].sort_values(ascending=False)
+
+# Plot heatmap
+plt.figure(figsize=(10, 6))
+sns.heatmap(df.corr(), annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
+plt.title("Feature Correlation Matrix")
+plt.show()
+```
+
+![Correlation Matrix](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/Corr.png?raw=True)
 
   - Box Plot Analysis: Detected outliers in Population, which were handled.
   - Histogram Distribution: Verified skewness in certain features.
