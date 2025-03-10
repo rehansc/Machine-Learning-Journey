@@ -100,11 +100,11 @@ plt.show()
 
 ![Correlation Matrix](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/Corr.png?raw=True)
 
-  - Box Plot Analysis: Detected outliers in Population, which were handled.
+  - Box Plot Analysis: Detected outliers in Population, which were handled. There are outliers in other features as well as the target value. Need to address that in the later time.
 
 ![Box Plot](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/box_plot.png?raw=True)
 
-  - Histogram Distribution: Verified skewness in certain features.
+  - Histogram Distribution: Verified skewness in certain features. The MedInc does show a normal distribution with some skewness. The other features do not show any normal distribution. 
 
 ![Histrogram Plot](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/feature_dist.png?raw=True)
 
