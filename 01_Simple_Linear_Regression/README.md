@@ -108,4 +108,9 @@ plt.show()
 
 ![Histrogram Plot](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/feature_dist.png?raw=True)
 
+## Simple Linear Regression
+
+Since there is a relative high correlation between MedInc and Target, I am going to conduct simple linear regression. 
+
+
 
