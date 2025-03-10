@@ -102,6 +102,10 @@ plt.show()
 
   - Box Plot Analysis: Detected outliers in Population, which were handled.
 
+![Box Plot](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/box_plot.png?raw=True)
+
   - Histogram Distribution: Verified skewness in certain features.
+
+![Histrogram Plot](https://github.com/rehansc/Machine-Learning-Journey/blob/main/01_Simple_Linear_Regression/feature_dist.png?raw=True)
 
 
